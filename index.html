@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="Website Icon" href="lo.jpg">
+  <title>Rainbow</title>
+  <style>
+    body{
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 400px;
+    }
+    button:hover{
+      background-color: black;
+      color: aqua;
+    }
+    button{
+      width: 200px;
+      height: 100px;
+    }
+    .ani{
+      display: grid;
+      grid-template-columns: auto;
+    }
+    .item1{
+      width: 500px;
+      height: 150px;
+      background-image: url(ak.jpg);
+      background-size: cover;
+      margin-right: 300px;
+      padding: 90px;
+      animation-name: box;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes box{
+    0%{background-image: url(ak.jpg);}
+    25%{background-image: url(ak2.jpg);}
+    50%{background-image: url(4.jpeg);}
+    75%{background-image: url(5.jpeg);}
+}
+header{
+  margin-right: 150px;
+}
+  </style>
+  <body>
+    <header>
+      <h1>Rainbow</h1>
+    </header>
+    <div class="ani">
+      <div class="item1"></div>
+    </div>
+    <br></br>
+  <button>click me</button>
+
+  <script src="me.js"></script>
+</body>
+</html>
